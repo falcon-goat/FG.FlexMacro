@@ -1386,7 +1386,7 @@
 , 			{
 				"box" : 				{
 					"maxclass" : "bpatcher",
-					"varname" : "M4L.api.FG.SelectTrack",
+					"varname" : "gui_select_track",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"presentation_rect" : [ 4.0, 112.0, 100.0, 16.0 ],
@@ -1470,7 +1470,7 @@
 					"patching_rect" : [ 128.0, 556.0, 104.0, 20.0 ],
 					"presentation" : 1,
 					"id" : "obj-165",
-					"name" : "M4L.api.FG.Track.SelectMixerOrDevice.maxpat"
+					"name" : "M4L.api.FG.GUI.Track.SelectMixerOrDevice.maxpat"
 				}
 
 			}
@@ -1636,6 +1636,24 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"source" : [ "obj-165", 0 ],
+					"destination" : [ "obj-203", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-142", 0 ],
+					"destination" : [ "obj-165", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"source" : [ "obj-77", 0 ],
 					"destination" : [ "obj-60", 0 ],
@@ -1842,15 +1860,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-142", 0 ],
-					"destination" : [ "obj-165", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"source" : [ "obj-2", 0 ],
 					"destination" : [ "obj-142", 0 ],
 					"hidden" : 0,
@@ -2007,15 +2016,6 @@
 				"patchline" : 				{
 					"source" : [ "obj-203", 1 ],
 					"destination" : [ "obj-53", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-165", 0 ],
-					"destination" : [ "obj-203", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
@@ -2238,8 +2238,8 @@
 		"parameters" : 		{
 			"obj-70" : [ "live.text", "live.text", 0 ],
 			"obj-13::obj-21" : [ "live.button[1]", "live.button", 0 ],
-			"obj-165::obj-1::obj-19" : [ "saved-int[2]", "saved-int", 0 ],
 			"obj-42::obj-32" : [ "MIDI Knob[1]", "live.dial", 0 ],
+			"obj-165::obj-1::obj-19" : [ "saved-int[2]", "saved-int", 0 ],
 			"obj-24::obj-21" : [ "live.button[5]", "live.button", 0 ],
 			"obj-13::obj-32" : [ "MIDI Knob[5]", "live.dial", 0 ],
 			"obj-42::obj-40::obj-13" : [ "live-path-storage[2]", "live-path-storage", 0 ],
