@@ -21,6 +21,101 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"maxclass" : "live.text",
+					"hint" : "H:ResetAll",
+					"annotation" : "A:ResetAll",
+					"varname" : "sn_reset_all",
+					"presentation_rect" : [ 0.0, 4.0, 100.0, 16.0 ],
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"patching_rect" : [ 428.0, 72.0, 48.0, 16.0 ],
+					"mode" : 0,
+					"presentation" : 1,
+					"id" : "obj-22",
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"text" : "Reset All Values",
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_steps" : 0,
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_exponent" : 1.0,
+							"parameter_invisible" : 0,
+							"parameter_unitstyle" : 10,
+							"parameter_annotation_name" : "AN:ResetAll",
+							"parameter_mmax" : 1.0,
+							"parameter_mmin" : 0.0,
+							"parameter_type" : 2,
+							"parameter_initial_enable" : 0,
+							"parameter_shortname" : "Reset All",
+							"parameter_modmax" : 127.0,
+							"parameter_longname" : "LN:ResetAll",
+							"parameter_modmin" : 0.0,
+							"parameter_linknames" : 0,
+							"parameter_modmode" : 0,
+							"parameter_info" : "",
+							"parameter_units" : "",
+							"parameter_order" : 0,
+							"parameter_defer" : 0,
+							"parameter_speedlim" : 1.0
+						}
+
+					}
+
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "live.text",
+					"hint" : "H:Debug",
+					"annotation" : "A:Debug",
+					"varname" : "debug_toggle[1]",
+					"fontface" : 0,
+					"presentation_rect" : [ 4.0, 24.0, 35.0, 12.0 ],
+					"numinlets" : 1,
+					"texton" : "debug",
+					"numoutlets" : 2,
+					"automation" : "debug",
+					"patching_rect" : [ 40.0, 20.0, 40.0, 20.0 ],
+					"presentation" : 1,
+					"id" : "obj-17",
+					"outlettype" : [ "", "" ],
+					"automationon" : "debug",
+					"parameter_enable" : 1,
+					"text" : "debug",
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_steps" : 0,
+							"parameter_enum" : [ "debug", "debug" ],
+							"parameter_exponent" : 1.0,
+							"parameter_invisible" : 0,
+							"parameter_unitstyle" : 10,
+							"parameter_annotation_name" : "AN:Debug",
+							"parameter_mmax" : 1.0,
+							"parameter_mmin" : 0.0,
+							"parameter_type" : 2,
+							"parameter_initial_enable" : 0,
+							"parameter_shortname" : "SnDebug",
+							"parameter_modmax" : 127.0,
+							"parameter_longname" : "LN:Debug",
+							"parameter_modmin" : 0.0,
+							"parameter_linknames" : 0,
+							"parameter_modmode" : 0,
+							"parameter_info" : "",
+							"parameter_units" : "",
+							"parameter_order" : 0,
+							"parameter_defer" : 0,
+							"parameter_speedlim" : 1.0
+						}
+
+					}
+
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"maxclass" : "live.text",
 					"hint" : "H:ClearAll",
 					"annotation" : "A:ClearAll",
 					"varname" : "sn_clear_all",
@@ -797,53 +892,6 @@
 			}
 , 			{
 				"box" : 				{
-					"maxclass" : "live.text",
-					"varname" : "live.text[5]",
-					"fontface" : 0,
-					"presentation_rect" : [ 4.0, 24.0, 35.0, 12.0 ],
-					"numinlets" : 1,
-					"texton" : "debug",
-					"numoutlets" : 2,
-					"automation" : "debug",
-					"patching_rect" : [ 8.0, 52.0, 40.0, 20.0 ],
-					"presentation" : 1,
-					"id" : "obj-44",
-					"outlettype" : [ "", "" ],
-					"automationon" : "debug",
-					"parameter_enable" : 1,
-					"text" : "debug",
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_steps" : 0,
-							"parameter_enum" : [ "debug", "debug" ],
-							"parameter_exponent" : 1.0,
-							"parameter_invisible" : 0,
-							"parameter_unitstyle" : 10,
-							"parameter_annotation_name" : "",
-							"parameter_mmax" : 1.0,
-							"parameter_mmin" : 0.0,
-							"parameter_type" : 2,
-							"parameter_initial_enable" : 0,
-							"parameter_shortname" : "live.text[5]",
-							"parameter_modmax" : 127.0,
-							"parameter_longname" : "live.text[5]",
-							"parameter_modmin" : 0.0,
-							"parameter_linknames" : 0,
-							"parameter_modmode" : 0,
-							"parameter_info" : "",
-							"parameter_units" : "",
-							"parameter_order" : 0,
-							"parameter_defer" : 0,
-							"parameter_speedlim" : 1.0
-						}
-
-					}
-
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "r ---initbang",
 					"fontsize" : 10.0,
@@ -1097,50 +1145,6 @@
 					"fontname" : "Arial Bold",
 					"outlettype" : [ "" ],
 					"gradient" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"maxclass" : "live.text",
-					"varname" : "live.text[4]",
-					"presentation_rect" : [ 4.0, 4.0, 100.0, 16.0 ],
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"patching_rect" : [ 427.0, 71.0, 48.0, 16.0 ],
-					"mode" : 0,
-					"presentation" : 1,
-					"id" : "obj-43",
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"text" : "Reset All Values",
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_steps" : 0,
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_exponent" : 1.0,
-							"parameter_invisible" : 0,
-							"parameter_unitstyle" : 10,
-							"parameter_annotation_name" : "",
-							"parameter_mmax" : 1.0,
-							"parameter_mmin" : 0.0,
-							"parameter_type" : 2,
-							"parameter_initial_enable" : 0,
-							"parameter_shortname" : "live.text[1]",
-							"parameter_modmax" : 127.0,
-							"parameter_longname" : "live.text[4]",
-							"parameter_modmin" : 0.0,
-							"parameter_linknames" : 0,
-							"parameter_modmode" : 0,
-							"parameter_info" : "",
-							"parameter_units" : "",
-							"parameter_order" : 0,
-							"parameter_defer" : 0,
-							"parameter_speedlim" : 1.0
-						}
-
-					}
-
 				}
 
 			}
@@ -1646,6 +1650,24 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"source" : [ "obj-22", 0 ],
+					"destination" : [ "obj-45", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-17", 0 ],
+					"destination" : [ "obj-46", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"source" : [ "obj-11", 0 ],
 					"destination" : [ "obj-30", 0 ],
 					"hidden" : 0,
@@ -1841,28 +1863,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-43", 0 ],
-					"destination" : [ "obj-45", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"source" : [ "obj-23", 0 ],
 					"destination" : [ "obj-53", 0 ],
 					"hidden" : 0,
 					"midpoints" : [ 248.5, 640.5, 221.5, 640.5 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-44", 0 ],
-					"destination" : [ "obj-46", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
 				}
 
 			}
@@ -2247,14 +2251,13 @@
 		"parameters" : 		{
 			"obj-20" : [ "MapOnce", "MapOnce", 0 ],
 			"obj-13::obj-32" : [ "Reset Value Button[2]", "ResetValue", 0 ],
-			"obj-44" : [ "live.text[5]", "live.text[5]", 0 ],
 			"obj-142::obj-20::obj-19" : [ "saved-int", "saved-int", 0 ],
 			"obj-42::obj-32" : [ "Reset Value Button[1]", "ResetValue", 0 ],
 			"obj-47" : [ "Map", "Map", 0 ],
 			"obj-24::obj-32" : [ "Reset Value Button", "ResetValue", 0 ],
-			"obj-43" : [ "live.text[4]", "live.text[1]", 0 ],
 			"obj-26" : [ "live.text[1]", "live.text[1]", 0 ],
 			"obj-13::obj-59" : [ "FlexMacro Controler[3]", "foobar", 0 ],
+			"obj-11" : [ "LN:ClearAll", "SnClearAll", 0 ],
 			"obj-203::obj-194::obj-19" : [ "saved-int[1]", "saved-int", 0 ],
 			"obj-7::obj-59" : [ "FlexMacro Controler[4]", "foobar", 0 ],
 			"obj-2" : [ "live.text[3]", "live.text[1]", 0 ],
@@ -2263,7 +2266,6 @@
 			"obj-3" : [ "LN:EnableLearn", "SnEnableLearn", 0 ],
 			"obj-42::obj-59" : [ "FlexMacro Controler[2]", "foobar", 0 ],
 			"obj-203::obj-179::obj-14" : [ "live-path", "live-path", 0 ],
-			"obj-11" : [ "LN:ClearAll", "SnClearAll", 0 ],
 			"obj-13::obj-75" : [ "Set Reset Value[3]", "ResetValue", 0 ],
 			"obj-7::obj-32" : [ "Reset Value Button[3]", "ResetValue", 0 ],
 			"obj-24::obj-75" : [ "Set Reset Value[1]", "ResetValue", 0 ],
